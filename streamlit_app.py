@@ -64,7 +64,7 @@ dataframe['Meters from chosen location'] = dataframe.apply(
 
 # Get the rate of conversaton from the US dollar to your currency of choice
 dict_currency_rate = {'ISK': 142.68540780469763, 'EUR': 0.9247272054743851, 'SEK': 10.405770297762162, 'NZD': 1.5733308673941189, 'KRW': 1242.2877751063438, 'HUF': 367.0797114851119, 'SGD': 1.3233771037543927, 'MXN': 18.900591825411507, 'NOK': 9.889495098945812, 'BGN': 1.8085814684668025, 'USD': 1.0, 'MYR': 4.336045866469392, 'TRY': 18.79008692435732, 'CAD': 1.3402996116145738, 'CNY': 6.725448492694656, 'IDR': 15176.622896245608, 'AUD': 1.4412798224523766, 'HKD': 7.8112631773626795, 'CZK': 22.20362493064546, 'GBP': 0.821157758461254, 'DKK': 6.878768263362309, 'RON': 4.570279267616054, 'BRL': 5.133345663029407, 'PLN': 4.335860921028297, 'PHP': 54.96578509339745, 'JPY': 128.55557610504903, 'THB': 33.059922322914744, 'INR': 81.46476789347143, 'CHF': 0.9294433142223046, 'ILS': 3.424449787312743, 'ZAR': 16.874606990937675}
-chosen_currency = st.sidebar.selectbox('Select your currency:', dict_currency_rate.keys(), index=len(dict_currency_rate.keys())-2)
+chosen_currency = st.sidebar.selectbox('Select your currency:', dict_currency_rate.keys(), index=1)
 currency_rate = dict_currency_rate[chosen_currency]
 
 # Get the inflation rate of conversaton from the US dollar to your currency of choice
